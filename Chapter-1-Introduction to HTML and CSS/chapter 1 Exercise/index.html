@@ -1,73 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- This section contains information about the web page -->
+    <!-- Student Web Development Project - Chapter 1 Exercise -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken Alfredo Pasta Recipe</title>
-
-    <!-- This links the HTML file to the external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Student Recipe Project - Chicken Alfredo Pasta</title>
+    
+    <!-- Embedded CSS for styling and background colors -->
+    <style>
+        /* Body styling with gradient background */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            min-height: 100vh;
+        }
+        
+        /* Main project container */
+        .student-project {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        /* Header styling */
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .project-header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .student-info {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        /* Recipe image styling - centered */
+        .recipe-image {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 0 2rem;
+        }
+        
+        .recipe-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .recipe-image img:hover {
+            transform: scale(1.02);
+        }
+        
+        .recipe-image figcaption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Section styling */
+        section {
+            padding: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        /* List styling */
+        .ingredients-list, .cooking-steps {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        .ingredients-list li {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        .cooking-steps li {
+            margin-bottom: 1rem;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .cooking-steps li::marker {
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        /* Paragraph styling */
+        p {
+            color: #666;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        /* Footer styling */
+        .project-footer {
+            background: #f8f9fa;
+            text-align: center;
+            padding: 1.5rem;
+            color: #666;
+            border-top: 3px solid #667eea;
+        }
+        
+        .project-footer p {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .project-header h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            .recipe-image {
+                padding: 0 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- This container keeps all content neat and centered -->
-    <div class="recipe-container">
+    <!-- Main container for the recipe content -->
+    <div class="student-project">
 
-        <!-- Main heading of the recipe page -->
-        <h1>Chicken Alfredo Pasta</h1>
+        <!-- Project header with title and student information -->
+        <header class="project-header">
+            <h1>Chicken Alfredo Pasta Recipe</h1>
+            <p class="student-info">Web Development Student - Chapter 1 Exercise</p>
+        </header>
 
-        <!-- This displays an image of the recipe -->
-        <img src="https://images.pexels.com/photos/13294544/pexels-photo-13294544.jpeg" alt="Chicken Alfredo Pasta" width="400">
+        <!-- Recipe image with proper alt text for accessibility -->
+        <figure class="recipe-image">
+            <img src="https://images.pexels.com/photos/13294544/pexels-photo-13294544.jpeg" 
+                 alt="Delicious creamy Chicken Alfredo Pasta with herbs" 
+                 width="400" 
+                 height="300">
+            <figcaption>Figure 1: Homemade Chicken Alfredo Pasta</figcaption>
+        </figure>
 
-        <!-- Image caption -->
-        <p class="caption"><em>Figure 1: Creamy Chicken Alfredo Pasta</em></p>
+        <!-- Recipe introduction section -->
+        <section class="recipe-intro">
+            <h2>About This Recipe</h2>
+            <p>
+                Chicken Alfredo Pasta is a classic Italian-American dish that's creamy, delicious, 
+                and surprisingly easy to make at home. This rich and comforting pasta features tender 
+                chicken pieces in a velvety sauce made with heavy cream, butter, and Parmesan cheese. 
+                Perfect for a cozy dinner or when you want to impress your guests with restaurant-quality 
+                flavor right from your own kitchen!
+            </p>
+        </section>
 
-        <!-- Short description of the recipe -->
-        <p>
-            Chicken Alfredo Pasta is a creamy and delicious dish made with pasta,
-            chicken, cheese, and Alfredo sauce. It is easy to prepare and perfect
-            for lunch or dinner.
-        </p>
+        <!-- Ingredients section using semantic HTML -->
+        <section class="ingredients-section">
+            <h2>Required Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>2 cups of pasta (fettuccine recommended)</li>
+                <li>1 chicken breast (boneless, skinless)</li>
+                <li>1 cup of heavy cooking cream</li>
+                <li>1/2 cup of grated Parmesan cheese</li>
+                <li>1 tablespoon of unsalted butter</li>
+                <li>1 clove of fresh garlic, minced</li>
+                <li>Salt and freshly ground black pepper</li>
+                <li>Fresh parsley for garnish (optional)</li>
+            </ul>
+        </section>
 
-        <!-- Ingredients section heading -->
-        <h2>Ingredients</h2>
+        <!-- Cooking instructions section -->
+        <section class="method-section">
+            <h2>Cooking Instructions</h2>
+            <ol class="cooking-steps">
+                <li>Fill a large pot with water, add salt, and bring to boil</li>
+                <li>Cook pasta according to package directions until al dente</li>
+                <li>While pasta cooks, cut chicken into bite-sized pieces</li>
+                <li>Heat butter in a large skillet over medium-high heat</li>
+                <li>Cook chicken pieces until golden brown and fully cooked</li>
+                <li>Add minced garlic and cook for 1 minute until fragrant</li>
+                <li>Pour in cream and add Parmesan cheese, stirring constantly</li>
+                <li>Simmer sauce until it thickens slightly (2-3 minutes)</li>
+                <li>Drain pasta and add to the skillet with sauce</li>
+                <li>Toss everything together and season with salt and pepper</li>
+                <li>Serve immediately while hot, garnished with fresh parsley</li>
+            </ol>
+        </section>
 
-        <!-- Unordered list showing the ingredients needed -->
-        <ul>
-            <li>2 cups of pasta</li>
-            <li>1 chicken breast</li>
-            <li>1 cup of cooking cream</li>
-            <li>1/2 cup of grated cheese</li>
-            <li>1 tablespoon of butter</li>
-            <li>1 clove of garlic</li>
-            <li>Salt and pepper</li>
-        </ul>
+        <!-- Additional tips section -->
+        <section class="tips-section">
+            <h2>Chef's Tips</h2>
+            <p>
+                For the best results, use freshly grated Parmesan cheese instead of pre-shredded varieties, 
+                as it melts better and provides superior flavor. Don't overcook the pasta - it should be 
+                al dente (firm to the bite) since it will continue cooking slightly when mixed with the hot sauce. 
+                You can add vegetables like broccoli or mushrooms for extra nutrition and flavor!
+            </p>
+        </section>
 
-        <!-- Method section heading -->
-        <h2>Method</h2>
-
-        <!-- Ordered list showing the steps in order -->
-        <ol>
-            <li>Boil the pasta in salted water until it becomes soft.</li>
-            <li>Cut the chicken breast into small pieces.</li>
-            <li>Cook the chicken in a pan with butter until it turns golden.</li>
-            <li>Add garlic and stir for one minute.</li>
-            <li>Add cooking cream and grated cheese to make the sauce.</li>
-            <li>Mix the cooked pasta with the chicken and Alfredo sauce.</li>
-            <li>Add salt and pepper, then serve the pasta while it is hot.</li>
-        </ol>
-
-        <!-- Extra explanation about the recipe -->
-        <h2>Additional Information</h2>
-
-        <p>
-            This Chicken Alfredo Pasta is a popular Italian-inspired dish known for its rich
-            and creamy flavor. It is perfect for family meals and can be customized by adding
-            vegetables such as broccoli or mushrooms. The recipe is simple to follow, making
-            it suitable for beginners who are learning how to cook. Serving this dish with
-            garlic bread or a fresh salad can make the meal even more enjoyable.
-        </p>
+        <!-- Project footer -->
+        <footer class="project-footer">
+            <p>Student Web Development Project - Created for Learning Purposes</p>
+            <p>Chapter 1: Basic HTML Structure and Semantic Elements</p>
+        </footer>
 
     </div>
 </body>
