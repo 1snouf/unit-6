@@ -1,0 +1,89 @@
+/* Reset default spacing */
+* {
+  box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1f2937, #2563eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator card */
+.calculator {
+  width: 350px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* Main heading */
+h1 {
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+/* Text */
+p {
+  color: #374151;
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Focus effect for input fields */
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.03);
+}
+
+/* Result text */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}

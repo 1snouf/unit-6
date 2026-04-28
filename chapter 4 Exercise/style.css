@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+/* Header styling */
+header {
+    background-color: #17072b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo/heading font */
+header h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0 0 15px 0;
+    text-decoration: underline;
+}
+
+/* Navigation menu */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+
+/* Welcome section */
+.welcome {
+    flex: 2;
+}
+
+.welcome h2,
+.lineup h2 {
+    font-family: Tahoma, sans-serif;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+/* Line up section */
+.lineup {
+    flex: 1;
+    background-color: #172d67;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Square images under Line Up text */
+.image-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-row img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Footer styling */
+footer {
+    background-color: #8c15e9;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}

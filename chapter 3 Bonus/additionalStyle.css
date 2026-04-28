@@ -1,0 +1,27 @@
+/* A */
+.box:nth-child(1) {
+  border-color: #7b3fe4;
+  box-shadow: 12px 12px 18px rgba(255, 0, 0, 0.5);
+}
+
+/* B */
+.box:nth-child(2) {
+  border-color: #66ff66;
+  box-shadow: inset 12px 12px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* C */
+.box:nth-child(3) {
+  border: 10px solid orange;
+  border-radius: 30px;
+  box-shadow:
+    0 0 0 10px blue,
+    0 0 0 22px red,
+    0 0 0 34px green;
+}
+
+/* D */
+.box:nth-child(4) {
+  border-color: #8b2e2e;
+  text-shadow: 3px 3px 4px gray;
+}

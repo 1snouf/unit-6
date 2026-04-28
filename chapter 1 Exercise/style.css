@@ -1,0 +1,56 @@
+/* Styles the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styles the main recipe container */
+.recipe-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* Styles the main heading */
+h1 {
+    color: #b85c38;
+    text-align: center;
+}
+
+/* Styles section headings */
+h2 {
+    color: #6b4226;
+    border-bottom: 2px solid #e6b17e;
+    padding-bottom: 5px;
+}
+
+/* Styles paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Styles the recipe image */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Styles the image caption */
+.caption {
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Styles list items */
+li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
