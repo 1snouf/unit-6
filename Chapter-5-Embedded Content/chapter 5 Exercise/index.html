@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Psychedelic Fish Audio Sampler</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Embedded Video</title>
+
+    <style>
+        /* Remove default spacing */
+        body {
+            margin: 0;
+            height: 100vh;
+
+            /* Centering (horizontal + vertical) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #2c2ff8;
+        }
+
+        video {
+            max-width: 80%;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>🐟 PSYCHEDELIC FISH</h1>
-    <h2 id="bankTitle">Sample Bank 1</h2>
-  </header>
+    <video controls loop poster="Lisa rockstar pic.jpeg">
+        <source src="VS code Lisa song Video .mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-  <main class="container">
-
-    <section class="speech-box">
-      <textarea id="speechText" placeholder="Type Here"></textarea>
-      <button id="sayBtn">Say it</button>
-    </section>
-
-    <section class="samples" id="samples"></section>
-
-  </main>
-
-  <div class="arrows">
-    <button id="leftBtn">⬅</button>
-    <button id="rightBtn">➡</button>
-  </div>
-
-  <script src="index.js"></script>
 </body>
 </html>
