@@ -4,169 +4,91 @@
     <!-- Student Web Development Project - Chapter 1 Exercise -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Recipe Project - Chicken Alfredo Pasta</title>
+    <title> Chicken Alfredo Pasta Recipe</title>
     
-    <!-- Embedded CSS for styling and background colors -->
+    <!-- embedded css for styling  -->
     <style>
-        /* Body styling with gradient background */
+        /* basic body styling */
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-            min-height: 100vh;
-        }
-        
-        /* Main project container */
-        .student-project {
+            font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            overflow: hidden;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
         }
         
-        /* Header styling */
-        .project-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+        /* main heading styling */
+        h1 {
+            color: #2c3e50;
             text-align: center;
-            padding: 2rem;
+            border-bottom: 3px solid #87CEEB;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
         
-        .project-header h1 {
-            margin: 0 0 0.5rem 0;
-            font-size: 2.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        /* section headings styling */
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
         }
         
-        .student-info {
-            margin: 0;
-            opacity: 0.9;
-            font-size: 1.1rem;
+        /* container for content */
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        /* Recipe image styling - centered */
-        .recipe-image {
-            text-align: center;
-            margin: 2rem 0;
-            padding: 0 2rem;
+        /* paragraph styling */
+        p {
+            margin-bottom: 15px;
+            color: #555;
         }
         
-        .recipe-image img {
+        /* list styling */
+        ul, ol {
+            margin-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        /* image styling */
+        img {
             max-width: 100%;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
         }
         
-        .recipe-image img:hover {
-            transform: scale(1.02);
-        }
-        
-        .recipe-image figcaption {
-            margin-top: 1rem;
-            font-style: italic;
-            color: #666;
-            font-size: 0.9rem;
-        }
-        
-        /* Section styling */
-        section {
-            padding: 2rem;
-            border-bottom: 1px solid #eee;
-        }
-        
-        section:last-of-type {
-            border-bottom: none;
-        }
-        
-        h2 {
-            color: #2c3e50;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 0.5rem;
-        }
-        
-        /* List styling */
-        .ingredients-list, .cooking-steps {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-        
-        .ingredients-list li {
-            margin-bottom: 0.5rem;
-            color: #555;
-        }
-        
-        .cooking-steps li {
-            margin-bottom: 1rem;
-            color: #555;
-            line-height: 1.7;
-        }
-        
-        .cooking-steps li::marker {
-            font-weight: bold;
-            color: #667eea;
-        }
-        
-        /* Paragraph styling */
-        p {
-            color: #666;
-            margin-bottom: 1rem;
-            text-align: justify;
-        }
-        
-        /* Footer styling */
-        .project-footer {
-            background: #f8f9fa;
+        /* footer styling */
+        footer {
             text-align: center;
-            padding: 1.5rem;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
             color: #666;
-            border-top: 3px solid #667eea;
-        }
-        
-        .project-footer p {
-            margin: 0.5rem 0;
-            text-align: center;
-        }
-        
-        /* Responsive design */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            .project-header h1 {
-                font-size: 2rem;
-            }
-            
-            section {
-                padding: 1.5rem;
-            }
-            
-            .recipe-image {
-                padding: 0 1rem;
-            }
         }
     </style>
 </head>
 
 <body>
-    <!-- Main container for the recipe content -->
     <div class="student-project">
 
-        <!-- Project header with title and student information -->
+        <!-- Project header with title  -->
         <header class="project-header">
             <h1>Chicken Alfredo Pasta Recipe</h1>
             <p class="student-info">Web Development Student - Chapter 1 Exercise</p>
         </header>
 
-        <!-- Recipe image with proper alt text for accessibility -->
+  
         <figure class="recipe-image">
             <img src="https://images.pexels.com/photos/13294544/pexels-photo-13294544.jpeg" 
                  alt="Delicious creamy Chicken Alfredo Pasta with herbs" 
@@ -175,7 +97,7 @@
             <figcaption>Figure 1: Homemade Chicken Alfredo Pasta</figcaption>
         </figure>
 
-        <!-- Recipe introduction section -->
+   
         <section class="recipe-intro">
             <h2>About This Recipe</h2>
             <p>
@@ -187,7 +109,7 @@
             </p>
         </section>
 
-        <!-- Ingredients section using semantic HTML -->
+       
         <section class="ingredients-section">
             <h2>Required Ingredients</h2>
             <ul class="ingredients-list">
@@ -233,8 +155,7 @@
 
         <!-- Project footer -->
         <footer class="project-footer">
-            <p>Student Web Development Project - Created for Learning Purposes</p>
-            <p>Chapter 1: Basic HTML Structure and Semantic Elements</p>
+            <p>Chapter 1: Basic HTML Structure</p>
         </footer>
 
     </div>

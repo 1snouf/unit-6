@@ -1,86 +1,90 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #000000;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
 header {
     background-color: #17072b;
-    color: #ffffff;
+    color: white;
     text-align: center;
     padding: 20px;
 }
 
-/* Logo/heading font */
 header h1 {
     font-family: Tahoma, sans-serif;
     font-weight: 700;
-    font-size: 40px;
-    margin: 0 0 15px 0;
-    text-decoration: underline;
 }
 
-/* Navigation menu */
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-/* Main layout */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 main {
     display: flex;
-    gap: 20px;
-    padding: 25px;
 }
 
-/* Welcome section */
 .welcome {
-    flex: 2;
-}
-
-.welcome h2,
-.lineup h2 {
-    font-family: Tahoma, sans-serif;
-    font-size: 28px;
-    text-decoration: underline;
-}
-
-/* Line up section */
-.lineup {
-    flex: 1;
-    background-color: #172d67;
-    color: #ffffff;
+    flex: 3;
     padding: 20px;
 }
 
-/* Square images under Line Up text */
-.image-row {
+.welcome h2 {
+    margin-bottom: 10px;
+}
+
+.welcome img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #172d67;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.images {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
 }
 
-.image-row img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.images img {
+    width: 50%;
 }
 
-.image-row img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-/* Footer styling */
 footer {
     background-color: #8c15e9;
-    color: #ffffff;
+    color: white;
     text-align: center;
     padding: 10px;
 }

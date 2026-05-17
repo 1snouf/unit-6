@@ -1,89 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Website</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
+  <title>Simple Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>My Simple Website</h1>
+  </header>
 
-    <!-- ================= HEADER ================= -->
-    <header>
-        <h1>My Website</h1>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- ================= NAVIGATION ================= -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- ================= WIREFRAME IMAGE ================= -->
-    <section class="wireframe">
-        <h2>Wireframe Design</h2>
-        <!-- Image added from directory -->
-        <img src="wireframe.png" alt="Wireframe Layout">
+  <main>
+    <section class="column">
+      <h2>Column 1</h2>
+      <div class="card">
+        <h3>Item 1</h3>
+        <p>Learn the basics of HTML and how to structure a page.</p>
+      </div>
+      <div class="card">
+        <h3>Item 2</h3>
+        <p>Use simple CSS to make the page look cleaner.</p>
+      </div>
     </section>
 
-    <!-- ================= MAIN CONTENT ================= -->
-    <main>
+    <section class="column">
+      <h2>Main Content</h2>
+      <div class="card">
+        <h3>Item 3</h3>
+        <p>Put your main text or information here.</p>
+      </div>
+      <button>Click Me</button>
+    </section>
 
-        <!-- LEFT COLUMN -->
-        <section class="column">
-            <h2>Column 1</h2>
-            <div class="card">
-                <h3>📚 Demo Item 1</h3>
-                <p>Learn the fundamentals of web development with HTML5 semantic elements and modern structure.</p>
-            </div>
-            <div class="card">
-                <h3>🎨 Demo Item 2</h3>
-                <p>Master CSS styling techniques including flexbox, grid, and responsive design principles.</p>
-            </div>
-        </section>
+    <aside class="column">
+      <h2>Sidebar</h2>
+      <div class="card">
+        <h3>Item 4</h3>
+        <p>Extra notes or links can go in the sidebar.</p>
+      </div>
+    </aside>
+  </main>
 
-        <!-- MIDDLE COLUMN -->
-        <section class="column">
-            <h2>Main Content</h2>
-            <div class="card">
-                <h3>⚡ Demo Item 3</h3>
-                <p>Interactive JavaScript features and DOM manipulation for dynamic web applications.</p>
-            </div>
-            <div class="card">
-                <h3>🚀 Demo Item 4</h3>
-                <p>Advanced web development concepts including APIs, frameworks, and modern tools.</p>
-            </div>
-
-            <!-- Enhanced Button -->
-            <button>🎯 Click Me</button>
-        </section>
-
-        <!-- RIGHT COLUMN -->
-        <aside class="column">
-            <h2>Sidebar</h2>
-            <div class="card">
-                <h3>📊 Demo Item 5</h3>
-                <p>Track your progress and monitor your learning journey with detailed analytics.</p>
-            </div>
-            <div class="card">
-                <h3>🏆 Achievements</h3>
-                <p>Earn badges and certificates as you complete modules and projects.</p>
-            </div>
-        </aside>
-
-    </main>
-
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        <p> 2026 My Website</p>
-        <p>© 2026 My Website</p>
-    </footer>
-
+  <footer>
+    <p>© 2026 My Simple Website</p>
+  </footer>
 </body>
 </html>
